@@ -11,6 +11,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: const [
             About(),
+            Skills(),
             Projects(),
             Contacts(),
           ],

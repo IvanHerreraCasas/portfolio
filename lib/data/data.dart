@@ -1,4 +1,5 @@
 import 'package:portfolio/models/contact.dart';
+import 'package:portfolio/models/logo.dart';
 import 'package:portfolio/models/project.dart';
 
 final projects = <Project>[
@@ -74,11 +75,61 @@ The app was build using JetPack compose and the operations are calculated on a l
   const Project(
     title: 'Kotlin Calculator',
     assetName: 'assets/png/mockup_kotlin_calculator.png',
-    description: '''Kotlin calculator was my first mobile app, the app is a clone of  Xiaomi scientific calculator. Something that I like of this app is that it shows the result while you’re typing.
+    description:
+        '''Kotlin calculator was my first mobile app, the app is a clone of  Xiaomi scientific calculator. Something that I like of this app is that it shows the result while you’re typing.
 
 Motivation
 My motivation for this app was to experiment how is the process of build an app, and get familiarized with Kotlin, read docs, and learn more about strings and their functions.''',
   ),
+];
+
+final languageLogos = <Logo>[
+  const Logo(
+    name: 'Python',
+    svgAssetpath: 'assets/icons/python.svg',
+  ),
+  const Logo(
+    name: 'Kotlin',
+    svgAssetpath: 'assets/icons/kotlin.svg',
+  ),
+  const Logo(
+    name: 'Dart',
+    svgAssetpath: 'assets/icons/dart.svg',
+  ),
+  const Logo(
+    name: 'Java',
+    svgAssetpath: 'assets/icons/java.svg',
+  ),
+];
+
+final dataBaseLogos = <Logo>[
+  const Logo(
+    name: 'MySQL',
+    svgAssetpath: 'assets/icons/mysql.svg',
+  ),
+  const Logo(
+    name: 'Firebase',
+    svgAssetpath: 'assets/icons/firebase.svg',
+  ),
+];
+
+final versionControlLogos = <Logo>[
+  const Logo(
+    name: 'Git',
+    svgAssetpath: 'assets/icons/git.svg',
+  ),
+  const Logo(
+    name: 'Jira',
+    svgAssetpath: 'assets/icons/jira.svg',
+  ),
+];
+
+final flutterSkills = <String>[
+  '• State management: Riverpod.',
+  '• Database: Sqflite, Hive, Firebase.',
+  '• Authentication: Firebase',
+  '• Http clients: Dio.',
+  '• Services: Audio service, path provider, permision handler',
 ];
 
 final contacts = <Contact>[];

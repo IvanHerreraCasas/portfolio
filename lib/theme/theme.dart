@@ -13,7 +13,7 @@ class AppTheme {
     ),
     headline5: GoogleFonts.workSans(
       fontSize: 24,
-      color: Colors.black
+      color: Colors.black,
     ),
     bodyText1: GoogleFonts.workSans(
       fontSize: 16,
