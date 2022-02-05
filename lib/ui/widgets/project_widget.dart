@@ -16,7 +16,7 @@ class ProjectWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: LayoutBuilder(
         builder: (context, constraints) {
           if (constraints.maxWidth > 800) {
@@ -73,12 +73,9 @@ class ProjectWidget extends StatelessWidget {
               ],
             );
           }
-          return Padding(
-            padding: const EdgeInsets.all(20),
-            child: Column(
+          return Column(
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
-
               children: [
                 Text(
                   project.title,
@@ -123,8 +120,7 @@ class ProjectWidget extends StatelessWidget {
                   style: Theme.of(context).textTheme.bodyText1,
                 ),
               ],
-            ),
-          );
+            );
         },
       ),
     );

@@ -83,6 +83,8 @@ My motivation for this app was to experiment how is the process of build an app,
 
 final contacts = <Contact>[];
 
-const String kname = '';
+const String kname = 'Ivan Herrera Casas';
 
-const String kabout = '';
+const String kabout = '''A 20 years old self-taught programmer, physics student and flutter enthusiast.
+
+I’m looking for an intern or entry position in a mobile development company.''';
