@@ -1,5 +1,6 @@
+import 'package:portfolio/models/category.dart';
 import 'package:portfolio/models/contact.dart';
-import 'package:portfolio/models/logo.dart';
+import 'package:portfolio/models/skill.dart';
 import 'package:portfolio/models/project.dart';
 
 final projects = <Project>[
@@ -83,53 +84,98 @@ My motivation for this app was to experiment how is the process of build an app,
   ),
 ];
 
-final languageLogos = <Logo>[
-  const Logo(
-    name: 'Python',
-    svgAssetpath: 'assets/icons/python.svg',
+final skillCategories = <SkillCategory>[
+  const SkillCategory(
+    name: 'Programming languages',
+    skills: [
+      Skill(
+        name: 'Dart',
+        svgAssetpath: 'assets/icons/dart.svg',
+        description: '''• Intermediate knowledge of dart and currently using it to build flutter apps.''',
+        colorValue: 0xFFD6E5FA,
+      ),
+      Skill(
+        name: 'Java',
+        svgAssetpath: 'assets/icons/java.svg',
+        description: '''• Basic knowledge of Java acquired in a university course.''',
+        colorValue: 0xFFFCD1D1,
+      ),
+      Skill(
+        name: 'Kotlin',
+        svgAssetpath: 'assets/icons/kotlin.svg',
+        description: '''• Intermediate knowledge of kotlin acquired with google codelabs.
+• Used to build android apps and to solve some physics problems.''',
+        colorValue: 0xFFF0D9FF,
+      ),
+      Skill(
+        name: 'Python',
+        svgAssetpath: 'assets/icons/python.svg',
+        description: '''• Intermediate knowledge of python and currently using it at university to solve physics problems.
+• Build a rest api using flask.''',
+        colorValue: 0xFFFDD998,
+      ),
+    ],
   ),
-  const Logo(
-    name: 'Kotlin',
-    svgAssetpath: 'assets/icons/kotlin.svg',
+  const SkillCategory(
+    name: 'Frameworks',
+    skills: [
+      Skill(
+        name: 'Flutter',
+        svgAssetpath: 'assets/icons/flutter.svg',
+        description:
+            '''• Advance knowledge of Flutter acquired with videos, articles, documentation and with the experience acquired in the development of 6 apps, including 3 open source projects: Music app, Inventory management app, and Todo list.
+• Some used plugins and packages:
+    - State management: Riverpod
+    - Database: Sqflite, Hive, Firebase.
+    - Authentication: Firebase.
+    - Http clients: Dio.
+    - Services: Audio service, path provider, permision handler.''',
+        colorValue: 0xFFD6E5FA,
+      ),
+      Skill(
+        name: 'Kotlin',
+        svgAssetpath: 'assets/icons/kotlin.svg',
+        description: '''• Basic knowledge of kotlin.
+• Developed 2 apps: Kotlin calculator and SymPy app.''',
+        colorValue: 0xFFF0D9FF,
+      ),
+    ],
   ),
-  const Logo(
-    name: 'Dart',
-    svgAssetpath: 'assets/icons/dart.svg',
+  const SkillCategory(
+    name: 'Databases',
+    skills: [
+      Skill(
+        name: 'Firebase',
+        svgAssetpath: 'assets/icons/firebase.svg',
+        description: '''• Intermediate knowledge of Firebase, including cloud firestore and authentication.
+• Used in 2 projects: Inventory management app and Todo List.''',
+        colorValue: 0xFFFFC898,
+      ),
+      Skill(
+        name: 'MySQL',
+        svgAssetpath: 'assets/icons/mysql.svg',
+        description: '''• Basic knowledge of MySQL acquired in the process of creating a MySQL server to control the inventory of a small business.''',
+        colorValue: 0xFFD3DEDC,
+      ),
+    ],
   ),
-  const Logo(
-    name: 'Java',
-    svgAssetpath: 'assets/icons/java.svg',
-  ),
-];
-
-final dataBaseLogos = <Logo>[
-  const Logo(
-    name: 'MySQL',
-    svgAssetpath: 'assets/icons/mysql.svg',
-  ),
-  const Logo(
-    name: 'Firebase',
-    svgAssetpath: 'assets/icons/firebase.svg',
-  ),
-];
-
-final versionControlLogos = <Logo>[
-  const Logo(
-    name: 'Git',
-    svgAssetpath: 'assets/icons/git.svg',
-  ),
-  const Logo(
-    name: 'Jira',
-    svgAssetpath: 'assets/icons/jira.svg',
-  ),
-];
-
-final flutterSkills = <String>[
-  '• State management: Riverpod.',
-  '• Database: Sqflite, Hive, Firebase.',
-  '• Authentication: Firebase',
-  '• Http clients: Dio.',
-  '• Services: Audio service, path provider, permision handler',
+  const SkillCategory(
+    name: 'Version control and project management',
+    skills: [
+      Skill(
+        name: 'Git',
+        svgAssetpath: 'assets/icons/git.svg',
+        description: '• Basic knowledge of Git.',
+        colorValue: 0xFFFF7878,
+      ),
+      Skill(
+        name: 'Jira',
+        svgAssetpath: 'assets/icons/jira.svg',
+        description: '• Currently learning Jira.',
+        colorValue: 0xFF9AD0EC,
+      ),
+    ],
+  )
 ];
 
 final contacts = <Contact>[];
@@ -138,4 +184,4 @@ const String kname = 'Ivan Herrera Casas';
 
 const String kabout = '''A 20 years old self-taught programmer, physics student and flutter enthusiast.
 
-I’m looking for an intern or entry position in a mobile development company.''';
+I'm looking for an intern or entry position in a mobile development company.''';

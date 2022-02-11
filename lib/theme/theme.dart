@@ -5,19 +5,24 @@ class AppTheme {
   static TextTheme lightTextTheme = TextTheme(
     headline2: GoogleFonts.breeSerif(
       fontSize: 60,
-      color: const Color(0xff483C32),
     ),
     headline3: GoogleFonts.breeSerif(
       fontSize: 48,
-      color: const Color(0xff5C4033),
+    ),
+    headline4: GoogleFonts.workSans(
+      fontSize: 34,
+      color: Colors.black,
     ),
     headline5: GoogleFonts.workSans(
       fontSize: 24,
       color: Colors.black,
     ),
+    headline6: GoogleFonts.workSans(
+      fontSize: 20,
+      color: Colors.black,
+    ),
     bodyText1: GoogleFonts.workSans(
       fontSize: 16,
-      color: const Color(0xff483C32),
     ),
     button: GoogleFonts.workSans(
       fontSize: 14,
