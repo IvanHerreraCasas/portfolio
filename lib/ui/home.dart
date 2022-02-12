@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final itemScrollController = ItemScrollController();
     final width = MediaQuery.of(context).size.width;
-    const widthBreakPoint = 400;
+    const widthBreakPoint = 450;
 
     return Scaffold(
       appBar: PreferredSize(
@@ -25,8 +25,6 @@ class HomePage extends StatelessWidget {
               children: [
                 SvgPicture.asset(
                   'assets/icons/flutter.svg',
-                  // width: 40,
-                  //height: 40,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -81,6 +79,7 @@ class HomePage extends StatelessWidget {
             )),
       ),
       body: ScrollablePositionedList.builder(
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         itemScrollController: itemScrollController,
         itemCount: 3,
         itemBuilder: (context, index) {

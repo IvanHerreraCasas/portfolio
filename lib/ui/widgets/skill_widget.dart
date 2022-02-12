@@ -10,7 +10,7 @@ class SkillWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+      margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
       padding: const EdgeInsets.all(15),
       decoration: BoxDecoration(
         color: Color(skill.colorValue),
@@ -37,7 +37,7 @@ class SkillWidget extends StatelessWidget {
           skill.description.isEmpty
               ? const SizedBox()
               : Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                  padding: const EdgeInsets.symmetric(vertical: 20),
                   child: Text(
                     skill.description,
                     style: Theme.of(context).textTheme.bodyText1,

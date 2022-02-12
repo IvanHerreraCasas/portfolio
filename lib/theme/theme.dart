@@ -3,17 +3,18 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   static TextTheme lightTextTheme = TextTheme(
-    headline2: GoogleFonts.breeSerif(
+    headline2: GoogleFonts.merriweather(
       fontSize: 60,
     ),
-    headline3: GoogleFonts.breeSerif(
+    headline3: GoogleFonts.merriweather(
+      color: const Color.fromARGB(180, 0, 0, 0),
       fontSize: 48,
     ),
-    headline4: GoogleFonts.workSans(
-      fontSize: 34,
+    headline4: GoogleFonts.merriweather(
+      fontSize: 30,
       color: Colors.black,
     ),
-    headline5: GoogleFonts.workSans(
+    headline5: GoogleFonts.merriweather(
       fontSize: 24,
       color: Colors.black,
     ),
@@ -34,7 +35,6 @@ class AppTheme {
     return ThemeData(
       brightness: Brightness.light,
       textTheme: lightTextTheme,
-      //scaffoldBackgroundColor: const Color.fromARGB(255, 255, 237, 237),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           primary: Colors.black,

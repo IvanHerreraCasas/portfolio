@@ -7,14 +7,20 @@ class Projects extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 1000),
+    return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        children: List.generate(
-          projects.length,
-          (index) => ProjectWidget(project: projects[index], isLeft: index % 2 != 0),
-        ),
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Projects',
+            style: Theme.of(context).textTheme.headline3,
+          ),
+          ...List.generate(
+            projects.length,
+            (index) => ProjectWidget(project: projects[index], isLeft: index % 2 != 0),
+          ),
+        ],
       ),
     );
   }

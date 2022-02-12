@@ -8,21 +8,21 @@ class Skills extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxWidth: 1000),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 30),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: skillCategories
-                .map(
-                  (skillCategory) => SkillCategoryWidget(skillCategory: skillCategory),
-                )
-                .toList(),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Skills',
+            style: Theme.of(context).textTheme.headline3,
           ),
-        ),
+          ...skillCategories
+              .map(
+                (skillCategory) => SkillCategoryWidget(skillCategory: skillCategory),
+              )
+              .toList()
+        ],
       ),
     );
   }
