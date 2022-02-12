@@ -25,6 +25,9 @@ class AppTheme {
     bodyText1: GoogleFonts.workSans(
       fontSize: 16,
     ),
+    bodyText2: GoogleFonts.workSans(
+      fontSize: 16,
+    ),
     button: GoogleFonts.workSans(
       fontSize: 14,
       fontWeight: FontWeight.bold,

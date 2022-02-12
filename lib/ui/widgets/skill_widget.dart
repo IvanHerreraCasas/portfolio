@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:portfolio/models/skill.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SkillWidget extends StatelessWidget {
   const SkillWidget({Key? key, required this.skill}) : super(key: key);
@@ -34,15 +36,15 @@ class SkillWidget extends StatelessWidget {
               ),
             ],
           ),
-          skill.description.isEmpty
-              ? const SizedBox()
-              : Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20),
-                  child: Text(
-                    skill.description,
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ),
-                ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 20),
+            child: MarkdownBody(
+              data: skill.description,  
+              onTapLink: (text, href, title) {
+                href != null ? launch(href) : null;
+              },
+            ),
+          ),
         ],
       ),
     );
