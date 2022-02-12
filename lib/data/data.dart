@@ -7,7 +7,7 @@ final projects = <Project>[
   //Music app
   const Project(
     title: 'Music App',
-    assetName: 'assets/png/mockup_music_app.png',
+    assetName: 'assets/mockups/music_app.png',
     description:
         '''Some years ago, the first time I heard about programming, web and mobile development I thought it would be nice to create my own custom app. One that use a lot is a music app, so some weeks ago when I remembered it I decided to make one.
         
@@ -19,7 +19,7 @@ The design was inspired by [this beautiful design](https://dribbble.com/shots/91
   //Todo list
   const Project(
     title: 'To-Do List',
-    assetName: 'assets/png/mockup_todo_list.png',
+    assetName: 'assets/mockups/todo_list.png',
     description:
         '''The dilemma of a self programmer … what should I learn now. After debating with myself between design or firebase skills I decided to go with firebase.
         
@@ -29,7 +29,7 @@ Todo list app is actually a clone of [an app with the same name](https://play.go
   //Inventory management
   const Project(
     title: 'Inventory management',
-    assetName: 'assets/png/mockup_inventory_management.png',
+    assetName: 'assets/mockups/inventory_management.png',
     description:
         '''At home my parents have a small store (school supplies), and we always were facing problems, sometimes we didn't know the price or stock of a product, other times we didn't know about sales and purchases of each day. So I decided to create an app to help them.
         
@@ -41,7 +41,7 @@ The app was builded using firebase.''',
   //Cookbook
   const Project(
     title: 'CookBook',
-    assetName: 'assets/png/mockup_cookbook.png',
+    assetName: 'assets/mockups/cookbook.png',
     description:
         '''After looking at the typical tutorial of a To-Do app, I decided to make my own Flutter app then I realized that a recipes app would be very similar to a To-Do one, so I decided to make CookBook.
         
@@ -52,7 +52,7 @@ The app comes with some default Peruvian food, and use sqflite to store the data
   //Personal Finance
   const Project(
     title: 'Personal Finance',
-    assetName: 'assets/png/mockup_personal_finance.png',
+    assetName: 'assets/mockups/personal_finance.png',
     description:
         '''Personal Finance app was made to help people control their incomes, expenses and schedule their payments.
 
@@ -65,7 +65,7 @@ The app includes:
   //Anime app
   const Project(
     title: 'Anime app',
-    assetName: 'assets/png/mockup_anime.png',
+    assetName: 'assets/mockups/anime.png',
     description:
         '''Anime app is a basic clone of [MyAnimeList](https://play.google.com/store/apps/details?id=net.myanimelist.app&hl=es_US&gl=US). 
         
@@ -76,7 +76,7 @@ The app use [Jikan](https://docs.api.jikan.moe/) to get the data.''',
   //Kotlin SymPy
   const Project(
     title: 'Kotlin SymPy',
-    assetName: 'assets/png/mockup_kotlin_sympy.png',
+    assetName: 'assets/mockups/kotlin_sympy.png',
     description: '''Sympy app allows to solve complex symbolic mathematical operations using SymPy, a python library.
 
 The app was build using JetPack compose and the operations are calculated on a local server that was made in python using Flask.''',
@@ -84,7 +84,7 @@ The app was build using JetPack compose and the operations are calculated on a l
   //Kotlin Calculator
   const Project(
     title: 'Kotlin Calculator',
-    assetName: 'assets/png/mockup_kotlin_calculator.png',
+    assetName: 'assets/mockups/kotlin_calculator.png',
     description:
         '''Kotlin calculator was my first mobile app, the app is a clone of  [Xiaomi scientific calculator](https://play.google.com/store/apps/details?id=com.miui.calculator&hl=es&gl=US). 
         
