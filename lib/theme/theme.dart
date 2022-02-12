@@ -1,34 +1,41 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
-  static TextTheme lightTextTheme = TextTheme(
-    headline2: GoogleFonts.merriweather(
+  static TextTheme lightTextTheme = const TextTheme(
+    headline2: TextStyle(
+      fontFamily: 'Merryweather',
       fontSize: 60,
     ),
-    headline3: GoogleFonts.merriweather(
-      color: const Color.fromARGB(180, 0, 0, 0),
+    headline3: TextStyle(
+      fontFamily: 'Merryweather',
+      color: Color.fromARGB(180, 0, 0, 0),
       fontSize: 48,
     ),
-    headline4: GoogleFonts.merriweather(
+    headline4: TextStyle(
+      fontFamily: 'Merryweather',
       fontSize: 30,
       color: Colors.black,
     ),
-    headline5: GoogleFonts.merriweather(
+    headline5: TextStyle(
+      fontFamily: 'Merryweather',
       fontSize: 24,
       color: Colors.black,
     ),
-    headline6: GoogleFonts.workSans(
+    headline6: TextStyle(
+      fontFamily: 'Work Sans',
       fontSize: 20,
       color: Colors.black,
     ),
-    bodyText1: GoogleFonts.workSans(
+    bodyText1: TextStyle(
+      fontFamily: 'Work Sans',
       fontSize: 16,
     ),
-    bodyText2: GoogleFonts.workSans(
+    bodyText2: TextStyle(
+      fontFamily: 'Work Sans',
       fontSize: 16,
     ),
-    button: GoogleFonts.workSans(
+    button: TextStyle(
+      fontFamily: 'Work Sans',
       fontSize: 14,
       fontWeight: FontWeight.bold,
     ),
