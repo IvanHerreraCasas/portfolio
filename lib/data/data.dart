@@ -14,7 +14,7 @@ final projects = <Project>[
 Music app includes all the features of a music player: play, pause, seek, shuffle, repeat, play in background, etc.
         
 The design was inspired by [this beautiful design](https://dribbble.com/shots/9173692-Music-App).''',
-    sourceCodePath: 'https://github.com/Ivan-H-C/music_app',
+    sourceCodePath: 'https://github.com/IvanHerreraCasas/music_app',
   ),
   //Todo list
   const Project(
@@ -24,7 +24,7 @@ The design was inspired by [this beautiful design](https://dribbble.com/shots/91
         '''The dilemma of a self programmer … what should I learn now. After debating with myself between design or firebase skills I decided to go with firebase.
         
 Todo list app is actually a clone of [an app with the same name](https://play.google.com/store/apps/details?id=todolist.scheduleplanner.dailyplanner.todo.reminders&hl=en_US&gl=US), I implemented almost all the important features of that complex to-do application and did some improvements to the login using flutter-fire ui.''',
-    sourceCodePath: 'https://github.com/Ivan-H-C/todo_list_app',
+    sourceCodePath: 'https://github.com/IvanHerreraCasas/todo_list_app',
   ),
   //Inventory management
   const Project(
@@ -36,7 +36,7 @@ Todo list app is actually a clone of [an app with the same name](https://play.go
 Inventory management app organize the products in categories and allow add sales and purchases at anytime, updating automatically the stock.
         
 The app was builded using firebase.''',
-    sourceCodePath: 'https://github.com/Ivan-H-C/inventory_management_app',
+    sourceCodePath: 'https://github.com/IvanHerreraCasas/inventory_management_app',
   ),
   //Cookbook
   const Project(
@@ -190,8 +190,19 @@ final skillCategories = <SkillCategory>[
   )
 ];
 
-final contacts = <Contact>[];
+final contacts = <Contact>[
+  const Contact(
+    brandCodePoint: 0xf09b,
+    link: 'https://github.com/IvanHerreraCasas',
+  ),
+  const Contact(
+    brandCodePoint: 0xf099,
+    link: 'https://twitter.com/ivanhc_pp',
+  )
+];
 
 const String kname = 'Ivan Herrera Casas';
 
 const String kabout = '''A 20 years old self-taught programmer, physics student and flutter enthusiast.''';
+
+const String kAssetPicturePath = 'assets/profile.jpg';

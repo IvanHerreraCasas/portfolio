@@ -1,11 +1,9 @@
 class Contact {
-  final String name;
-  final String imagePath;
+  final int brandCodePoint;
   final String link;
 
   const Contact({
-    required this.name,
-    required this.imagePath,
+    required this.brandCodePoint,
     required this.link,
   });
 }

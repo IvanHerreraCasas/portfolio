@@ -37,16 +37,7 @@ class About extends StatelessWidget {
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
-                            ContactWidget(
-                              icon: FontAwesomeIcons.github,
-                              link: 'https://github.com/Ivan-H-C',
-                            ),
-                            ContactWidget(
-                              icon: FontAwesomeIcons.twitter,
-                              link: 'https://twitter.com/ivanhc_pp',
-                            )
-                          ],
+                          children: contacts.map((contact) => ContactWidget(contact: contact)).toList(),
                         ),
                       ],
                     ),
@@ -65,54 +56,45 @@ class About extends StatelessWidget {
             );
           }
           return Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Text(
-                            'Hi I\'m',
-                            style: Theme.of(context).textTheme.headline5,
-                          ),
-                          const SizedBox(height: 10),
-                          Text(
-                            kname,
-                            style: Theme.of(context).textTheme.headline4,
-                          ),
-                        ],
-                      ),
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          'Hi I\'m',
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          kname,
+                          style: Theme.of(context).textTheme.headline4,
+                        ),
+                      ],
                     ),
-                    const SizedBox(width: 20),
-                    Image.asset(
-                      'assets/profile.jpg',
-                      width: MediaQuery.of(context).size.width / 3,
-                    )
-                  ],
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  kabout,
-                  style: Theme.of(context).textTheme.headline6,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    ContactWidget(
-                      icon: FontAwesomeIcons.github,
-                      link: 'https://github.com/Ivan-H-C',
-                    ),
-                    ContactWidget(
-                      icon: FontAwesomeIcons.twitter,
-                      link: 'https://twitter.com/ivanhc_pp',
-                    )
-                  ],
-                ),
-              ],
-            );
+                  ),
+                  const SizedBox(width: 20),
+                  Image.asset(
+                    kAssetPicturePath,
+                    width: MediaQuery.of(context).size.width / 3,
+                  )
+                ],
+              ),
+              const SizedBox(height: 20),
+              Text(
+                kabout,
+                style: Theme.of(context).textTheme.headline6,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: contacts.map((contact) => ContactWidget(contact: contact)).toList(),
+              ),
+            ],
+          );
         },
       ),
     );
