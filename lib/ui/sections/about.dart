@@ -46,7 +46,7 @@ class About extends StatelessWidget {
                       alignment: Alignment.center,
                       child: FractionallySizedBox(
                         widthFactor: 0.5,
-                        child: Image.asset('assets/profile.jpg'),
+                        child: Image.asset(kAssetPicturePath),
                       ),
                     ),
                   ),

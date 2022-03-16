@@ -16,6 +16,18 @@ Music app includes all the features of a music player: play, pause, seek, shuffl
 The design was inspired by [this beautiful design](https://dribbble.com/shots/9173692-Music-App).''',
     sourceCodePath: 'https://github.com/IvanHerreraCasas/music_app',
   ),
+  //Flutter planner
+  const Project(
+      title: 'Flutter Planner',
+      assetName: 'assets/mockups/flutter_planner.png',
+      description:
+          '''A personal planner app was one of my first app ideas before I started with programming, a desktop app that help people to control their schedule, some personal projects, tasks, notes, economy, etc.
+
+Some weeks ago finally windows support arrived to Flutter, together with my desire to learn about flutter bloc and a new database called isar; I decided to build Flutter planner.
+
+Flutter Planner is a basic implementation of that initial idea where people can add projects with description written in markdown, and schedule their activities.
+    ''',
+      sourceCodePath: 'https://github.com/IvanHerreraCasas/flutter_planner'),
   //Todo list
   const Project(
     title: 'To-Do List',
@@ -36,7 +48,8 @@ Todo list app is actually a clone of [an app with the same name](https://play.go
 Inventory management app organize the products in categories and allow add sales and purchases at anytime, updating automatically the stock.
         
 The app was builded using firebase.''',
-    sourceCodePath: 'https://github.com/IvanHerreraCasas/inventory_management_app',
+    sourceCodePath:
+        'https://github.com/IvanHerreraCasas/inventory_management_app',
   ),
   //Cookbook
   const Project(
@@ -77,7 +90,8 @@ The app use [Jikan](https://docs.api.jikan.moe/) to get the data.''',
   const Project(
     title: 'Kotlin SymPy',
     assetName: 'assets/mockups/kotlin_sympy.png',
-    description: '''Sympy app allows to solve complex symbolic mathematical operations using SymPy, a python library.
+    description:
+        '''Sympy app allows to solve complex symbolic mathematical operations using SymPy, a python library.
 
 The app was build using JetPack compose and the operations are calculated on a local server that was made in python using Flask.''',
   ),
@@ -101,19 +115,22 @@ final skillCategories = <SkillCategory>[
       Skill(
         name: 'Dart',
         svgAssetpath: 'assets/icons/dart.svg',
-        description: '''- Intermediate knowledge of dart and currently using it to build flutter apps.''',
+        description:
+            '''- Intermediate knowledge of dart and currently using it to build flutter apps.''',
         colorValue: 0xFFD6E5FA,
       ),
       Skill(
         name: 'Java',
         svgAssetpath: 'assets/icons/java.svg',
-        description: '''- Basic knowledge of Java acquired in a university course.''',
+        description:
+            '''- Basic knowledge of Java acquired in a university course.''',
         colorValue: 0xFFFCD1D1,
       ),
       Skill(
         name: 'Kotlin',
         svgAssetpath: 'assets/icons/kotlin.svg',
-        description: '''- Intermediate knowledge of kotlin acquired with google codelabs.
+        description:
+            '''- Intermediate knowledge of kotlin acquired with google codelabs.
 - Used to build android apps and to solve some physics problems.''',
         colorValue: 0xFFF0D9FF,
       ),
@@ -158,7 +175,8 @@ final skillCategories = <SkillCategory>[
       Skill(
         name: 'Firebase',
         svgAssetpath: 'assets/icons/firebase.svg',
-        description: '''- Intermediate knowledge of Firebase, including cloud firestore and authentication.
+        description:
+            '''- Intermediate knowledge of Firebase, including cloud firestore and authentication.
 - Used in 2 projects: Inventory management app and Todo List.''',
         colorValue: 0xFFFFC898,
       ),
@@ -203,6 +221,7 @@ final contacts = <Contact>[
 
 const String kname = 'Ivan Herrera Casas';
 
-const String kabout = '''A 20 years old self-taught programmer, physics student and flutter enthusiast.''';
+const String kabout =
+    '''A 20 years old self-taught programmer, physics student and flutter enthusiast.''';
 
 const String kAssetPicturePath = 'assets/profile.jpg';
