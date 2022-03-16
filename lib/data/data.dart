@@ -153,8 +153,8 @@ final skillCategories = <SkillCategory>[
         description:
             '''- Advance knowledge of Flutter acquired with videos, articles, documentation and with the experience on the development of 6 apps.
 - Some used plugins and packages:
-    - State management: Riverpod
-    - Database: Sqflite, Hive, Firebase.
+    - State management: Bloc, Riverpod
+    - Database: Firebase, Isar, Hive, Sqflite.
     - Authentication: Firebase.
     - Http clients: Dio.
     - Services: Audio service, path provider, permision handler.''',
