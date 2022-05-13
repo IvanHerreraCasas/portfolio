@@ -21,11 +21,13 @@ The design was inspired by [this beautiful design](https://dribbble.com/shots/91
       title: 'Flutter Planner',
       assetName: 'assets/mockups/flutter_planner.png',
       description:
-          '''A personal planner app was one of my first app ideas before I started with programming, a desktop app that help people to control their schedule, some personal projects, tasks, notes, economy, etc.
+          '''A personal planner app was one of my first app ideas before I started with programming; a simple app that helps people to control their activities, schedule, personal projects, tasks, notes, etc.
 
-Some weeks ago finally windows support arrived to Flutter, together with my desire to learn about flutter bloc and a new database called isar; I decided to build Flutter planner.
+Some months ago finally windows support arrived to Flutter, together with my desire to learn about flutter bloc and [supabase](https://supabase.com/); I decided to build Flutter planner.
 
-Flutter Planner is a basic implementation of that initial idea where people can add projects with description written in markdown, and schedule their activities.
+Flutter Planner is a basic implementation of that initial idea where people can plan their daily activities and see their routines in a timetable.
+
+Together with the project, I developed [dynamic_timetable](https://pub.dev/packages/dynamic_timeline), a flutter package to create daily timelines, timetables, and in the future Gantt charts, in the process I learned about how are built the widgets and what are render objects.
     ''',
       sourceCodePath: 'https://github.com/IvanHerreraCasas/flutter_planner'),
   //Todo list
